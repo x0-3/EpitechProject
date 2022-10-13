@@ -1,0 +1,256 @@
+body{
+    font-family: "Times New Roman", Georgia, Serif;
+    display: grid;
+    margin: 0;
+}
+
+/*/navigation bar/*/
+
+
+nav {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+}
+nav .logo {
+    float: left;
+    padding-top: 1em;
+}
+nav .logo button{
+    background-color: white;
+    border: none;
+}
+nav .logo button :hover{
+    background-color: lightgray;
+}
+nav .logo button a {
+    text-decoration: none;
+    color: black;
+    padding: 1em 2em 1em 2em;
+
+}
+nav .nav-button {
+    float: right;
+}
+nav .nav-button ul{
+    list-style-type: none;
+}
+nav .nav-button button{
+    border: none;
+    background-color: white;
+}
+nav .nav-button button :hover{
+    background-color: lightgray;
+}
+nav .nav-button a{
+    text-decoration: none;
+    color: black;
+    padding: 1em 2em 1em 2em;
+}
+
+
+/*/main page/ heading/*/
+header{
+    background-image: url(images/hamburger.jpg);
+    background-size: cover;
+    background-position: center;
+}
+header h2{
+    color: grey;
+    font-size: 2.5rem;
+    font-weight: 100;
+    padding: 32.5rem 2rem 0rem 2rem;
+    float: left;
+}
+
+
+
+/*/about page/*/
+.about img{
+    float: left;
+    margin: 5em 3em 5em 10em;
+    height: 70%;
+}
+
+.about h1 {
+    text-align: center;
+    margin: 2.5em 3em 0 10em;
+    font-size: 2.5rem;
+    font-weight: 100; 
+}
+.about .tradition h3{
+    text-align: center;
+    font-weight: 100;
+    margin: 2em 4.5em 0 10em;
+    font-size: 1.5rem;
+}
+.about .tradition p{
+    margin-right: 8em;
+    font-size: 1.1rem;
+}
+.about aside p{
+    color: grey;
+    font-size: 1.1rem;
+    margin-right: 8em;
+}
+
+/*/menu page/*/
+.menu h1{
+    float: left;
+    text-align: center;
+    margin: 2em 3em 1.5em 7em;
+    font-size: 2.5rem;
+    font-weight: 100; 
+}
+.menu .our-menu {
+    margin: 15em 3em 5em 10em;
+}
+.menu .our-menu h3{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.menu .our-menu p{
+    color: grey;
+}
+.menu img{
+    float: right;
+    margin: 2em 4.5em 0 10em;
+}
+
+/*/contact page/*/
+.contact h1 {
+    margin: 3em 4em 1.5em 4em;
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+.contact p{
+    margin: 2em 4.5em 1.5em 10em;
+}
+.contact .catering-service p{
+    color: rgb(107, 107, 255);
+    font-weight: 900;
+}
+
+iframe {
+    height: 400px;
+    width: 100%;
+  }
+
+/*/footer/*/
+footer{
+    background-color: rgba(104, 104, 104, 0.116);
+    text-align: center;
+    padding: 2em 0em 2em 0em;
+    margin-top: 4em;
+}
+footer a{
+    color: black;
+}
+
+/*/web responsive/*/
+@media screen and (max-width: 481px)  {
+
+    /*/ home page/*/
+    header{
+        background-position: center;
+    }
+    .about img{
+        height: auto;
+        margin: 0;
+        width: 100%;
+    }
+    /*/ about page/*/
+    .about h1 {
+        text-align: center;
+        margin: 0;
+        font-size: 2.5rem;
+        font-weight: 100; 
+    }
+
+    .about .tradition h3{
+        text-align: center;
+        font-weight: 100;
+        margin: 2em 0 0 0;
+        font-size: 1.5rem;
+    }
+
+    .about .tradition p{
+        text-align: center;
+        margin: 1em 1em 2em 1em;
+        font-size: 1.1rem;
+    }
+    .about aside{
+        margin: 0.5em ;
+        font-size: 1.1rem;
+    }
+
+    /*/ menu page/*/
+    .menu img{
+        height: auto;
+        width: 100%;
+    }
+
+     /*/ contact page/*/
+     .contact h1{
+        margin: 3em 1em 1em 1em;
+     }
+     .contact p{
+        margin: 0 4.5em 1.5em 3em;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 769px)  {
+
+    /*/ home page/*/
+    header{
+        background-position: center;
+    }
+    .about img{
+        height: auto;
+        margin: 0;
+        width: 100%;
+    }
+    /*/ about page/*/
+    .about h1 {
+        text-align: center;
+        margin: 0;
+        font-size: 2.5rem;
+        font-weight: 100; 
+    }
+
+    .about .tradition h3{
+        text-align: center;
+        font-weight: 100;
+        margin: 2em 0 0 0;
+        font-size: 1.5rem;
+    }
+
+    .about .tradition p{
+        text-align: center;
+        margin: 1em 1em 2em 1em;
+        font-size: 1.1rem;
+    }
+    .about aside{
+        margin: 0.5em ;
+        font-size: 1.1rem;
+    }
+
+    /*/ menu page/*/
+    .menu img{
+        height: auto;
+        margin: 0;
+        width: 100%;
+    }
+
+     /*/ contact page/*/
+     .contact h1{
+        margin: 3em 1em 1em 1em;
+     }
+     .contact p{
+        margin: 0 4.5em 1.5em 3em;
+    }
+}
+
+@media screen and (min-width: 769px)  {
+
+}
